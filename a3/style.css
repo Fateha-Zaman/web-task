@@ -1,0 +1,150 @@
+/* Name: Fateha Binta Zaman */
+
+/* General styles */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f6f1e8;
+    color: #3d342b;
+}
+
+/* Header */
+
+header {
+    text-align: center;
+    background-color: #7b3f2a;
+    color: white;
+    padding: 50px 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 42px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+/* Navigation */
+
+nav {
+    background-color: #5c2e1f;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 8px 12px;
+    font-size: 17px;
+}
+
+nav a:hover {
+    background-color: #9b6045;
+    border-radius: 5px;
+}
+
+/* Main content */
+
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    text-align: center;
+    color: #7b3f2a;
+}
+
+p {
+    line-height: 1.7;
+    text-align: center;
+}
+
+/* Home page photos */
+
+.photos {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px;
+}
+
+/* Gallery page */
+
+.gallery {
+    margin-bottom: 40px;
+}
+
+.photo-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px;
+}
+
+/* Images and captions */
+
+figure {
+    margin: 0;
+    background-color: white;
+    padding: 12px;
+    box-shadow: 0 3px 10px #ccc;
+}
+
+figure img {
+    display: block;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+figcaption {
+    text-align: center;
+    padding: 12px;
+    font-size: 18px;
+    font-style: italic;
+    color: #7b3f2a;
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+    background-color: #7b3f2a;
+    color: white;
+    padding: 20px;
+}
+
+/* Responsive layout */
+
+@media (max-width: 600px) {
+    header {
+        padding: 35px 15px;
+    }
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    .photos,
+    .photo-container {
+        grid-template-columns: 1fr;
+    }
+
+    figure img {
+        height: 260px;
+    }
+
+    nav a {
+        margin: 0 5px;
+    }
+}
